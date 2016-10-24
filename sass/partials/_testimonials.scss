@@ -1,0 +1,48 @@
+#testimonials{
+    background-color: map-get($colors, bgSecond);    
+    text-align: center;
+    color: map-get($colors, normalText);
+    
+    .circle-medium{
+        width: 18rem;
+        height: 18rem;
+        border-radius: 50%;
+        background-color: map-get($colors, link);
+        margin: 0 auto;
+        margin-bottom: 3.4rem;
+    }
+    
+    p{
+        font-family: 'Helvetica Neue LT Std', 'Verdana', sans-serif;
+        font-weight: 300;
+        font-size: 3.4rem;
+        line-height: 4.6rem;
+        color: #000;
+    }
+    
+    h5{
+        font-family: 'Helvetica Neue LT Std', 'Verdana', sans-serif;
+        font-weight: 300;
+        font-size: 2rem;
+        line-height: 4rem;
+        text-transform: uppercase;
+        color: map-get($colors, secondText);
+        margin: 3rem 0 3rem 0;
+    }
+    
+    .circle-micro{
+        margin: 0 auto 5rem auto;
+        width: 84px;
+        height: 10px;
+        
+        div{
+            float: left;
+            width: 10px;
+            height: 10px;
+            border: 1px solid map-get($colors, link); 
+            border-radius: 50%;
+            background-color: map-get($colors, bgSecond);
+            margin: 0 2px 0 2px;
+        }
+    }
+}

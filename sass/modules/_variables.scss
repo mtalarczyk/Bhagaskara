@@ -1,0 +1,76 @@
+//utworzenie mapy
+$colors: (
+    bg: #ffffff, 
+    bgSecond: #eeeeee,
+    hover: #9f449b,
+    hoverDark: #690869,
+    normalText: #676767,
+    secondText: #777777,
+    link: #ccd0d2
+);
+
+
+
+//Przykłady SASS !!!!!!!!!
+
+//$colorOne: blue;
+//$colorTwo: red;
+//
+//$top: 50px;
+//$bottom: 30px;
+//$left: 10px;
+//
+//$width: 1000px;
+//
+//@mixin borderRadius($value){
+//    -webkit-border-radius: $value;
+//    -moz-border-radius: $value;
+//    border-radius: $value;
+//}
+//
+//%box{
+//    @include borderRadius(5px);
+//    width: 300px;
+//    height: 100px;
+//    padding: 50px;
+//    margin: 50px auto 0 auto;
+//}
+//
+//$fontSize: 16px;
+//
+//@for $i from 1 through 5 
+//{   
+//    h#{$i} { 
+//        font-size: $fontSize * ( 5 - $i ) !important; 
+//        color: lighten( $colorTwo, 10% * $i ) !important;
+//    }
+//}
+//
+///*
+//Za pomocą pętli określ kolor obramowania dla 10 kontenerów. Niech kolor będzie pomarańczowy dla parzystych kontenerów, a niebieski dla nieparzystych. Określ im klasy od block_1 do block_10. Wykorzystaj pętle.
+//*/
+//@for $i from 1 through 10  //lub: to 11 - będzie to samo
+//{   
+//    .block_#{$i}{
+//
+//        width: 300px;
+//        height: 100px;
+//        border: 2px solid black;
+//        
+//        @if $i%2 == 0{
+//           border-color: orange;
+//        } @else {
+//           border-color: blue; 
+//        }
+//    }
+//}
+//
+//
+////utworzenie mapy
+//$colors: (
+//    color1: red, 
+//    color2: green, 
+//    color3: blue, 
+//    color4: orange, 
+//    color5: pink
+//);

@@ -1,0 +1,96 @@
+#contact{
+    background-color: map-get($colors, bg);    
+    text-align: center;
+    color: map-get($colors, normalText);
+    
+    .section-header{
+        width: 25.4rem;
+        margin-bottom: 13rem;
+    }
+    
+    form{
+        input.formText, textarea.formText{
+        display: block;
+        width: 100%;
+        border: 1px solid map-get($colors, normalText);
+        font-family: 'Helvetica Neue LT Std', 'Verdana', sans-serif;
+        font-weight: 300;
+        font-size: 2.3rem;
+        color: map-get($colors, normalText);
+        padding-left: 1.6rem;
+        }
+
+        input.formText{
+            margin-bottom: 2.6rem;
+            height: 7.2rem;
+            line-height: 7.2rem;
+        }
+
+        textarea.formText{
+            height: 28rem;
+            resize: none;
+            padding: 1.5rem;
+        }
+
+        input.formText::-webkit-input-placeholder, textarea.formText::-webkit-input-placeholder {
+            opacity: 1;
+            color: map-get($colors, secondText);
+        }
+        input.formText:-moz-placeholder, textarea.formText:-moz-placeholder {
+            opacity: 1;
+            color: map-get($colors, secondText);
+        }
+        input.formText:-ms-input-placeholder, textarea.formText:-ms-input-placeholder {
+            opacity: 1;
+            color: map-get($colors, secondText);
+        }
+
+        input.formText:focus, textarea.formText:focus{
+            border: 2px solid map-get($colors, hover);
+        } 
+    }
+    
+    p{
+        font-family: 'Helvetica Neue LT Std', 'Verdana', sans-serif;
+        font-weight: 600;
+        font-size: 2.8rem;
+        text-align: left;
+                
+        &:first-of-type{
+            font-family: 'Helvetica Neue LT Std', 'Verdana', sans-serif;
+            font-weight: 300;
+            font-size: 2.3rem;
+            margin-bottom: 3.5rem;
+        }
+        &:nth-of-type(2n){
+            margin-bottom: 3.5rem;
+        }
+    }
+    
+    .btn-contact{
+        width: 22.5rem;
+        margin-top: 2rem;
+        
+        border-top: 2px solid map-get($colors, hover);
+        border-right: 2px solid map-get($colors, hover);
+        border-left: 2px solid map-get($colors, hover);
+    }
+    
+    div.circle-small{
+        width: 7.5rem;
+        height: 7.5rem;
+        line-height: 7.5rem;
+        font-size: 4.6rem;
+        margin-left: 4rem;
+        
+        &:first-of-type{
+            margin-left: 0;
+        }
+        
+        &:last-of-type{
+            line-height: 6rem;
+        }
+    }
+    
+    
+}

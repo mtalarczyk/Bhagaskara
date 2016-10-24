@@ -1,0 +1,6 @@
+@for $i from 1 through 6 {
+    
+    .img-#{$i} {
+        background: map-get($colors, bg) url("../images/portfolio/0#{$i}.png") center / contain no-repeat;
+    }
+}

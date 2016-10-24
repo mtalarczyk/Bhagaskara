@@ -1,0 +1,34 @@
+//.container{
+//    width: 100%;
+//    max-width: 1200px;
+//    margin: 0 auto;
+//}
+
+.row::before, .row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+[class *= 'col-'] { 
+    float: left;
+}
+
+$grid: 12; //ustawienie na jaką ilość kolumn ma być nasz grid
+
+
+//poniższa pętla dzieli container w zależności od ilości kolumn i tego ile nasz grid ma maksymalnie kolumn
+@for $i from 1 through $grid {
+    
+    .col-#{$i} {
+        width: $i/$grid*100%;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+
+    }
+    
+    .col-offset-#{$i} {
+        margin-left: $i/$grid*100%;
+    }
+    
+}

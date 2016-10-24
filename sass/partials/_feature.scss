@@ -1,0 +1,194 @@
+#feature{
+    background-color: map-get($colors, bgSecond);    
+    text-align: center;
+    color: map-get($colors, normalText);
+        
+    h3, p{
+        font-family: "Lato", "Verdana", sans-serif;
+        font-weight: 300;
+    }
+    
+    h3{
+        font-size: 2.4rem;
+        line-height: 2.4rem;
+        margin-bottom: 2.5rem;
+    }
+    
+    p{
+        font-size: 1.6rem;
+        line-height: 3.2rem;
+        margin-bottom: 10rem;
+    }
+    
+    .hexagon-small{
+        width: 17.1rem;
+        height: 18.6rem;
+        margin: 16.5rem auto 4rem auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url("../images/feature/btn.png");
+        background-size: 100% 100%;
+        cursor: pointer;
+        
+        div{
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            
+        }
+        
+        .heart{
+            width: 7.1rem;
+            height: 6.2rem;
+            background-image: url("../images/feature/heart.png");
+        }
+        
+        .diamond{
+            width: 8.3rem;
+            height: 6.3rem;
+            background-image: url("../images/feature/diament.png");
+        }
+        
+        .cup{
+            width: 5.4rem;
+            height: 6.1rem;
+            background-image: url("../images/feature/coffe.png");
+        }
+        
+        .mobile{
+            width: 4.4rem;
+            height: 6.3rem;
+            background-image: url("../images/feature/phone.png");
+        }
+        
+        &:hover, &:active{
+            background-image: url("../images/feature/btn-hover.png");
+
+            .heart{
+                background-image: url("../images/feature/heart-hover.png");
+            }
+        
+            .diamond{
+                background-image: url("../images/feature/diament-hover.png");
+            }
+        
+            .cup{
+                background-image: url("../images/feature/coffe-hover.png");
+            }
+        
+            .mobile{
+                background-image: url("../images/feature/phone-hover.png");
+            }
+        }
+    }
+    
+}
+
+
+
+
+
+
+
+//Przykłady SASS !!!!!!!!!
+
+//body {
+//    background-color: beige;
+//    color: black;
+//}
+//
+//h2 {
+//    font-size: 30px;
+//    color: orange;
+//}
+//
+//section{
+//    padding-top: $top;
+//    padding-bottom: $bottom;
+//}
+//
+//ul.menu, h1{
+//    color: $colorOne;
+//}
+//
+//ul.menu {
+//    color: $colorTwo;
+//    
+//    li{
+//        display: inline-block;
+//        padding-left: $left;
+//    }
+//}
+//
+//header {
+//    border: 2px solid $colorOne;
+//}
+//
+//.main-width{
+//    width: $width;
+//    margin: 0 auto;
+//}
+//
+//ul.links {   
+//    li{
+//        color: blue;
+//        
+//        &:first-child {
+//            a {
+//                color: orange;
+//            }
+//        }
+//        
+//        &:last-child {
+//            a {
+//                color: green;
+//            }
+//        }
+//        
+//        a {  
+//            text-decoration: none;
+//            font-size: 20px;
+//            &:hover {
+//                color: red;
+//            }
+//        }
+//    }
+//}
+//
+//footer ul.menu{
+//    li{ 
+//        float: left;
+//        margin: 0 10px;
+//        padding: 10px;
+//        background-color: yellow;
+//        color: red;
+//        @include borderRadius(20px); //wywołanie MIXIN
+//        
+//        &:hover {
+//            background-color: aqua;
+//        }
+//        
+//        &:last-child {
+//            float: right;
+//        }
+//    }   
+//}
+//
+//
+//.success{
+//    @extend %box;
+//    background-color: map-get($colors, color1); //korzystanie z mapy
+//}
+//
+//.error{
+//    @extend %box;
+//    background-color: map-get($colors, color2);
+//    //korzystanie z mapy
+//}
+//
+//.info{
+//    @extend %box;
+//    background-color: map-get($colors, color3);
+//    //korzystanie z mapy
+//}

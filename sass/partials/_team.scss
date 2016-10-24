@@ -1,0 +1,130 @@
+#team{
+    background-color: map-get($colors, bg);    
+    text-align: center;
+    color: map-get($colors, normalText);
+    
+    .section-header{
+        width: 20rem;
+        margin-bottom: 13rem;
+    }
+    
+    .arrows{
+        margin: 0 auto 13.8rem auto;
+        width: 13.5rem;
+        height: 7rem;
+    }
+    
+    a{
+            display: flex;
+            float: left;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 6.4rem;
+            height: 7rem;
+            background-image: url("../images/team/btn.png");
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            cursor: pointer;
+        
+         div{
+            width: 1.6rem;
+            height: 2.4rem;
+            
+            &.arrow-left{
+                background-image: url("../images/team/left-arrow.png");
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                margin-right: 0.5rem;
+                cursor: pointer; 
+            }
+            
+            &.arrow-right{
+                background-image: url("../images/team/right-arrow.png");
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                margin-left: 0.5rem;
+                cursor: pointer;  
+            }
+        }
+        
+        &:last-of-type{
+              margin-left: 0.7rem;   
+        }
+        
+        &:hover, &:active{
+            background-image: url("../images/team/btn-hover.png");
+            background-size: 100% 100%;
+            
+            div{
+            
+                &.arrow-left{
+                    background-image: url("../images/team/left-arrow-hover.png");
+                }
+
+                &.arrow-right{
+                    background-image: url("../images/team/right-arrow-hover.png");
+                }
+            }
+        }
+    }
+    
+    .circle-large{
+        width: 25rem;
+        height: 25rem;
+        border-radius: 50%;
+        background-color: map-get($colors, bgSecond);
+        margin: 0 auto 8rem auto;
+    }
+    
+    h3{
+        font-family: 'Lato', 'Vesrdana', sans-serif;
+        font-size: 2.4rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 2.4rem;
+        margin-bottom: 2.4rem;
+    }
+    
+    h4{
+        font-family: 'Lato', 'Vesrdana', sans-serif;
+        font-size: 1.8rem;
+        font-weight: normal;
+        color: map-get($colors, secondText);
+        margin-bottom: 3.4rem;
+    }
+    
+//    .circle-small{
+//        float: left;
+//        width: 4.5rem;
+//        height: 4.5rem;
+//        line-height: 4.5rem;
+//        border: 1px solid map-get($colors, normalText);
+//        border-radius: 50%;
+//        background-color: map-get($colors, bg);
+//        font-family: 'Titillium Web', 'Verdana', sans-serif;
+//        font-size: 2.2rem;
+//        font-weight: 600;
+//        cursor: pointer;
+//        
+//        &:hover, &:active{
+//            background-color: map-get($colors, normalText);
+//            color: map-get($colors, bg);
+//        }
+//    }
+    
+    .col-4 div:last-of-type{
+        width: 12rem;
+        margin: 0 auto;
+        
+        div:last-of-type{
+            width: 4.5rem;
+            margin-left: 3rem;
+            line-height: 3.5rem;
+        }
+    }
+    
+    .col-4:last-of-type{
+        margin-bottom: 11.5rem;
+    }
+}

@@ -1,0 +1,90 @@
+h1, h2, h3 {
+    text-align: center;
+    font-weight: 300;
+    font-style: normal;    
+}
+
+h1 {
+    font-size: 9rem;
+}
+
+.violet{
+    color: map-get($colors, hover);
+}
+
+.section-header{
+    height: 4.8rem;
+    margin: 12.5rem auto 13.5rem auto;
+    text-align: center;
+    position: relative;
+    
+    h2{
+        display: block;
+        text-align: center;
+        width: 100%;
+        font-size: 4.8rem;
+        line-height: 4.8rem;
+    }
+    
+    div{
+        width: 2.8rem;
+        height: 2.8rem;
+        position: absolute;
+            
+        &:first-of-type{
+            border-left: 0.1rem solid map-get($colors, hover);
+            border-bottom: 0.1rem solid map-get($colors, hover);
+            bottom: -2.8rem;
+            left: -2.8rem;
+        }
+        
+        &:last-of-type{
+            border-right: 0.1rem solid map-get($colors, hover);
+            border-top: 0.1rem solid map-get($colors, hover);
+            top: -2.8rem;
+            right: -2.8rem;
+        }   
+    }    
+}
+
+.btn{
+    display: block;
+    font-family: "Lato", "Verdana", sans-serif;
+    font-size: 2rem;
+    text-decoration: none;
+    text-align: center;
+    color: map-get($colors, bg);
+    height: 7rem;
+    line-height: 7rem;
+    background-color: map-get($colors, hover);
+    border-bottom: 0.5rem solid map-get($colors, hoverDark);
+    border-radius: 5px;
+    cursor: pointer;
+    
+    &:active, &:hover {
+        color: map-get($colors, hoverDark);
+        line-height: 6.7rem;
+        background-color: map-get($colors, bg);
+        border: 0.2rem solid map-get($colors, hoverDark);
+        border-bottom: 0.5rem solid map-get($colors, hoverDark);  
+    }
+}
+
+.circle-small{
+        float: left;
+        width: 4.5rem;
+        height: 4.5rem;
+        line-height: 4.5rem;
+        border: 1px solid map-get($colors, normalText);
+        border-radius: 50%;
+        background-color: map-get($colors, bg);
+        font-family: 'Titillium Web', 'Verdana', sans-serif;
+        font-size: 2.2rem;
+        font-weight: 600;
+        cursor: pointer;
+        
+        &:hover, &:active{
+            background-color: map-get($colors, normalText);
+            color: map-get($colors, bg);
+        }
+    }

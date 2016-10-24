@@ -1,0 +1,46 @@
+#quote{
+    background: map-get($colors, bg) url("../images/quote/quote-bg.png") center / cover no-repeat;    
+    text-align: center;
+    color: map-get($colors, bg);
+        
+
+    h2{
+        font-family: "Lato", "Verdana", sans-serif;
+        font-weight: normal;
+        font-size: 4.8rem;
+        line-height: 4.8rem;
+        margin-bottom: 17.5rem;
+    }
+    
+    .hexagon{
+        width: 16.8rem;
+        height: 18.1rem;
+//        width: 100%;
+//        height: auto;
+//        width: 16.8rem;
+//        height: 18.1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 15rem auto 5rem auto;
+        background-image: url("../images/quote/btn.png");
+//        background-size: 15.2rem 16.1rem;
+        background-size: 100% 100%;
+        
+        
+        div{
+            width: 6.8rem;
+            height: 6.1rem;
+            background-image: url("../images/quote/study.png");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+        
+//        &:hover, &:active{
+//            background-image: url("../images/quote/btn-hover.png");
+//            background-size: 100% 100%;
+//        }
+    }
+     
+}

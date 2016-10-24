@@ -1,0 +1,38 @@
+#statistics{
+    background-color: map-get($colors, bgSecond);    
+    text-align: center;
+    color: map-get($colors, normalText);
+    
+//    display: flex;
+//    flex-direction: row;
+//    justify-content: center;
+//    align-items: center;
+    
+    
+    div{ 
+        
+        padding-top: 6.5rem;
+        padding-bottom: 6.5rem;
+    
+      div{
+        display: block;
+//        width: 20rem;
+        float: left;
+                
+        h2{
+            font-family: 'Helvetica Neue LT Std', 'Verdana', sans-serif;
+            font-weight: 300;
+            font-size: 6.4rem;
+            line-height: 6.4rem;
+        }
+        
+        p{
+            font-family: 'Helvetica Neue LT Std', 'Verdana', sans-serif;
+            font-weight: 300;
+            font-size: 1.6rem;
+            line-height: 3.2rem;
+        }
+    }
+}
+
+}
