@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    font-family: 'Existence', 'Verdana', sans-serif;
+    font-size: 10px;
+    @media #{$phone}{
+        font-size: 7px;
+    }
+    
+    @media #{$tablet}{
+        font-size: 8px;
+    }
+    
+    @media #{$desktop}{
+        font-size: 9px;
+    }
+    
+    @media #{$lgDesktop}{
+        font-size: 10px;
+    }
+    
+}
+
+header, section, footer{
+    width: 100%;
+}
+
+.container{
+    
+    @media #{$phone}{
+        max-width: auto;
+    }
+    
+    @media #{$tablet}{
+        max-width: 750px;
+    }
+    
+    @media #{$desktop}{
+        max-width: 970px;
+    }
+    
+    @media #{$lgDesktop}{
+        max-width: 1170px;
+    }
+    
+    //max-width: 1100px;
+    //min-height: 30px;
+    margin: 0 auto;
+}
+
+.clearfix::before,.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;    
+}

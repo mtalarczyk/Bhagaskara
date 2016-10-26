@@ -1,0 +1,116 @@
+@font-face {
+	font-family: 'Lato Hairline';
+	src: url('../fonts/Lato-Hairline.eot');
+	src: local('Lato Hairline'), local('Lato-Hairline'),
+		url('../fonts/Lato-Hairline.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Lato-Hairline.woff2') format('woff2'),
+		url('../fonts/Lato-Hairline.woff') format('woff'),
+		url('../fonts/Lato-Hairline.ttf') format('truetype'),
+		url('../fonts/Lato-Hairline.svg#Lato-Hairline') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url('../fonts/Lato-Bold.eot');
+	src: local('Lato Bold'), local('Lato-Bold'),
+		url('../fonts/Lato-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Lato-Bold.woff2') format('woff2'),
+		url('../fonts/Lato-Bold.woff') format('woff'),
+		url('../fonts/Lato-Bold.ttf') format('truetype'),
+		url('../fonts/Lato-Bold.svg#Lato-Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Titillium Web';
+	src: url('../fonts/TitilliumWeb-Light.eot');
+	src: local('Titillium WebLight'), local('TitilliumWeb-Light'),
+		url('../fonts/TitilliumWeb-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/TitilliumWeb-Light.woff2') format('woff2'),
+		url('../fonts/TitilliumWeb-Light.woff') format('woff'),
+		url('../fonts/TitilliumWeb-Light.ttf') format('truetype'),
+		url('../fonts/TitilliumWeb-Light.svg#TitilliumWeb-Light') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url('../fonts/Lato-Light.eot');
+	src: local('Lato Light'), local('Lato-Light'),
+		url('../fonts/Lato-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Lato-Light.woff2') format('woff2'),
+		url('../fonts/Lato-Light.woff') format('woff'),
+		url('../fonts/Lato-Light.ttf') format('truetype'),
+		url('../fonts/Lato-Light.svg#Lato-Light') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url('../fonts/Lato-Regular.eot');
+	src: local('Lato Regular'), local('Lato-Regular'),
+		url('../fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Lato-Regular.woff2') format('woff2'),
+		url('../fonts/Lato-Regular.woff') format('woff'),
+		url('../fonts/Lato-Regular.ttf') format('truetype'),
+		url('../fonts/Lato-Regular.svg#Lato-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Helvetica Neue LT Std';
+	src: url('../fonts/HelveticaNeueLTStd-BdCn.eot');
+	src: local('Helvetica Neue LT Std 77 Bold Condensed'), local('HelveticaNeueLTStd-BdCn'),
+		url('../fonts/HelveticaNeueLTStd-BdCn.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/HelveticaNeueLTStd-BdCn.woff2') format('woff2'),
+		url('../fonts/HelveticaNeueLTStd-BdCn.woff') format('woff'),
+		url('../fonts/HelveticaNeueLTStd-BdCn.ttf') format('truetype'),
+		url('../fonts/HelveticaNeueLTStd-BdCn.svg#HelveticaNeueLTStd-BdCn') format('svg');
+	font-weight: bolder;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Helvetica Neue LT Std';
+	src: url('../fonts/HelveticaNeueLTStd-Bd.eot');
+	src: local('Helvetica Neue LT Std 75 Bold'), local('HelveticaNeueLTStd-Bd'),
+		url('../fonts/HelveticaNeueLTStd-Bd.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/HelveticaNeueLTStd-Bd.woff2') format('woff2'),
+		url('../fonts/HelveticaNeueLTStd-Bd.woff') format('woff'),
+		url('../fonts/HelveticaNeueLTStd-Bd.ttf') format('truetype'),
+		url('../fonts/HelveticaNeueLTStd-Bd.svg#HelveticaNeueLTStd-Bd') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Existence';
+	src: url('../fonts/Existence-Light.eot');
+	src: local('Existence-Light'),
+		url('../fonts/Existence-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Existence-Light.woff2') format('woff2'),
+		url('../fonts/Existence-Light.woff') format('woff'),
+		url('../fonts/Existence-Light.ttf') format('truetype'),
+		url('../fonts/Existence-Light.svg#Existence-Light') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Helvetica Neue LT Std';
+	src: url('../fonts/HelveticaNeueLTStd-Lt.eot');
+	src: local('Helvetica Neue LT Std 45 Light'), local('HelveticaNeueLTStd-Lt'),
+		url('../fonts/HelveticaNeueLTStd-Lt.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/HelveticaNeueLTStd-Lt.woff2') format('woff2'),
+		url('../fonts/HelveticaNeueLTStd-Lt.woff') format('woff'),
+		url('../fonts/HelveticaNeueLTStd-Lt.ttf') format('truetype'),
+		url('../fonts/HelveticaNeueLTStd-Lt.svg#HelveticaNeueLTStd-Lt') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
