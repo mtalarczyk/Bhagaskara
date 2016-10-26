@@ -9,7 +9,10 @@ $colors: (
     link: #ccd0d2
 );
 
-
+$phone: "(max-width: 768px)";
+$tablet: "(min-width: 769px) and (max-width: 992px)";
+$desktop: "(min-width: 993px) and (max-width: 1200px)";
+$lgDesktop: "(min-width: 1201px)";
 
 //Przykłady SASS !!!!!!!!!
 

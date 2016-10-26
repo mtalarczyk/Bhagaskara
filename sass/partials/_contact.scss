@@ -69,6 +69,7 @@
     
     .btn-contact{
         width: 22.5rem;
+        line-height: 7rem;
         margin-top: 2rem;
         
         border-top: 2px solid map-get($colors, hover);
@@ -77,18 +78,18 @@
     }
     
     div.circle-small{
-        width: 7.5rem;
-        height: 7.5rem;
-        line-height: 7.5rem;
-        font-size: 4.6rem;
-        margin-left: 4rem;
+        width: 6.5rem;
+        height: 6.5rem;
+        line-height: 6.5rem;
+        font-size: 3.6rem;
+        margin-left: 2rem;
         
         &:first-of-type{
             margin-left: 0;
         }
         
         &:last-of-type{
-            line-height: 6rem;
+            line-height: 5.2rem;
         }
     }
     

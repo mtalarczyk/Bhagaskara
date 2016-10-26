@@ -31,4 +31,55 @@ $grid: 12; //ustawienie na jaką ilość kolumn ma być nasz grid
         margin-left: $i/$grid*100%;
     }
     
+    @media #{$phone}{
+        .col-xs-#{$i} {
+        width: $i/$grid*100%;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+
+        }
+
+        .col-xs-offset-#{$i} {
+            margin-left: $i/$grid*100%;
+        }
+    }
+    
+    @media #{$tablet}{
+        .col-sm-#{$i} {
+        width: $i/$grid*100%;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+
+        }
+
+        .col-sm-offset-#{$i} {
+            margin-left: $i/$grid*100%;
+        }
+    }
+    
+    @media #{$desktop}{
+        .col-sm-#{$i} {
+        width: $i/$grid*100%;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+
+        }
+
+        .col-sm-offset-#{$i} {
+            margin-left: $i/$grid*100%;
+        }
+    }
+    
+    @media #{$lgDesktop}{
+        .col-lg-#{$i} {
+        width: $i/$grid*100%;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+
+        }
+
+        .col-lg-offset-#{$i} {
+            margin-left: $i/$grid*100%;
+        }
+    }
 }
