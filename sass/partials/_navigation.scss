@@ -5,145 +5,69 @@
     
     nav{
         line-height: 8rem;
-    }
-    
-    h2{
-        display: block;
-        float: left;
-        font-size: 3rem;
-        font-weight: 700;
-//        line-height: 6rem;
-    }
-    
-    ul{
-        display: block;
-        float: right;
-        list-style: none;
+        background-color: map-get($colors, bg);
+        width: 100%;
+        z-index: 1000;
         
-        li{
-            font-family: 'Lato', sans-serif;
-            font-size: 1.5rem;
-            font-weight: normal;
-            display: block;
-            float: left;
-            padding: 0 1.5rem 0 1.5rem;
-//            line-height: 6rem;
-            text-transform: uppercase;
-            
-            &:hover, &:active{
-                color: map-get($colors, hover);
-                cursor: pointer;
+        div{
+            line-height: 8rem;
+                        
+            h2{
+                display: block;
+                float: left;
+                font-size: 3rem;
+                font-weight: 700;
+            }
+    
+            ul{
+                display: block;
+                float: right;
+                list-style: none;
+
+                li{
+                    font-family: 'Lato', sans-serif;
+                    font-size: 1.5rem;
+                    font-weight: normal;
+                    display: block;
+                    float: left;
+                    padding: 0 1.5rem 0 1.5rem;
+                    line-height: inherit;
+                    text-transform: uppercase;
+                    
+                    a{
+                        font-family: inherit;
+                        font-size: inherit;
+                        font-weight: inherit;
+                        display: inherit;
+                        float: inherit;
+                        line-height: inherit;
+                        
+                        text-decoration: none;
+                        color: map-get($colors, normalText);
+                        
+                        &:link, &:visited{
+                            text-decoration: none;
+                            color: map-get($colors, normalText);
+                        }
+
+                        &:hover, &:active{
+                            text-decoration: none;
+                            color: map-get($colors, hover);
+                            cursor: pointer;
+                        }
+                    }
+                }
             }
         }
     }
-        
     
+    .sticky{
+        position: fixed;
+        top: 0;
+        left: 0;
+        
+        -webkit-box-shadow: 0px 10px 21px -13px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 10px 21px -13px rgba(0,0,0,0.75);
+        box-shadow: 0px 10px 21px -13px rgba(0,0,0,0.75);
+    }
 }
-
-
-
-
-
-
-
-//Przykłady SASS !!!!!!!!!
-
-//body {
-//    background-color: beige;
-//    color: black;
-//}
-//
-//h2 {
-//    font-size: 30px;
-//    color: orange;
-//}
-//
-//section{
-//    padding-top: $top;
-//    padding-bottom: $bottom;
-//}
-//
-//ul.menu, h1{
-//    color: $colorOne;
-//}
-//
-//ul.menu {
-//    color: $colorTwo;
-//    
-//    li{
-//        display: inline-block;
-//        padding-left: $left;
-//    }
-//}
-//
-//header {
-//    border: 2px solid $colorOne;
-//}
-//
-//.main-width{
-//    width: $width;
-//    margin: 0 auto;
-//}
-//
-//ul.links {   
-//    li{
-//        color: blue;
-//        
-//        &:first-child {
-//            a {
-//                color: orange;
-//            }
-//        }
-//        
-//        &:last-child {
-//            a {
-//                color: green;
-//            }
-//        }
-//        
-//        a {  
-//            text-decoration: none;
-//            font-size: 20px;
-//            &:hover {
-//                color: red;
-//            }
-//        }
-//    }
-//}
-//
-//footer ul.menu{
-//    li{ 
-//        float: left;
-//        margin: 0 10px;
-//        padding: 10px;
-//        background-color: yellow;
-//        color: red;
-//        @include borderRadius(20px); //wywołanie MIXIN
-//        
-//        &:hover {
-//            background-color: aqua;
-//        }
-//        
-//        &:last-child {
-//            float: right;
-//        }
-//    }   
-//}
-//
-//
-//.success{
-//    @extend %box;
-//    background-color: map-get($colors, color1); //korzystanie z mapy
-//}
-//
-//.error{
-//    @extend %box;
-//    background-color: map-get($colors, color2);
-//    //korzystanie z mapy
-//}
-//
-//.info{
-//    @extend %box;
-//    background-color: map-get($colors, color3);
-//    //korzystanie z mapy
-//}

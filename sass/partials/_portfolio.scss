@@ -38,7 +38,7 @@
                 margin-bottom: 7rem;
             }
             
-            &:hover, &:active, &:focus{
+            &:hover, &:active, &:focus, &.checked{
                 border: 0.1rem solid map-get($colors, hover);
                 color: map-get($colors, bg);
                 background-color: map-get($colors, hover);
@@ -76,27 +76,37 @@
             z-index: 10;
 
             .plus {
-              background: #fff;
-              height: 15.4rem;
-              position: relative;
-              width: 0.2rem;
+                position: relative;
+                width: 0.2rem;
+                height: 15.4rem;
+                background: #fff;
+            }
+            
+            .plus:after {
+                content: "";
+                position: absolute;
+                width: inherit;
+                height: inherit;
+                background: inherit;
+                -ms-transform: rotate(90deg);
+                -webkit-transform: rotate(90deg);
+                -moz-transform: rotate(90deg);
+                transform: rotate(90deg);
             }
     
-            .plus:after {
-              opacity: 1;
-              background: #fff;
-              content: "";
-              height: 0.2rem;
-              left: -7.7rem;
-              position: absolute;
-              top: 7.7rem;
-              width: 15.4rem;
-            }
+//            .plus:after {
+//              opacity: 1;
+//              background: #fff;
+//              content: "";
+//              height: 0.2rem;
+//              left: -7.7rem;
+//              position: absolute;
+//              top: 7.7rem;
+//              width: 15.4rem;
+//            }
         }
             
             
-        
-        
         img{
                 width: 100%;
                 height: 200%;
@@ -129,111 +139,3 @@
     
    //  9A9EA4  0.1  5.4
 }
-
-
-
-
-
-
-
-//Przykłady SASS !!!!!!!!!
-
-//body {
-//    background-color: beige;
-//    color: black;
-//}
-//
-//h2 {
-//    font-size: 30px;
-//    color: orange;
-//}
-//
-//section{
-//    padding-top: $top;
-//    padding-bottom: $bottom;
-//}
-//
-//ul.menu, h1{
-//    color: $colorOne;
-//}
-//
-//ul.menu {
-//    color: $colorTwo;
-//    
-//    li{
-//        display: inline-block;
-//        padding-left: $left;
-//    }
-//}
-//
-//header {
-//    border: 2px solid $colorOne;
-//}
-//
-//.main-width{
-//    width: $width;
-//    margin: 0 auto;
-//}
-//
-//ul.links {   
-//    li{
-//        color: blue;
-//        
-//        &:first-child {
-//            a {
-//                color: orange;
-//            }
-//        }
-//        
-//        &:last-child {
-//            a {
-//                color: green;
-//            }
-//        }
-//        
-//        a {  
-//            text-decoration: none;
-//            font-size: 20px;
-//            &:hover {
-//                color: red;
-//            }
-//        }
-//    }
-//}
-//
-//footer ul.menu{
-//    li{ 
-//        float: left;
-//        margin: 0 10px;
-//        padding: 10px;
-//        background-color: yellow;
-//        color: red;
-//        @include borderRadius(20px); //wywołanie MIXIN
-//        
-//        &:hover {
-//            background-color: aqua;
-//        }
-//        
-//        &:last-child {
-//            float: right;
-//        }
-//    }   
-//}
-//
-//
-//.success{
-//    @extend %box;
-//    background-color: map-get($colors, color1); //korzystanie z mapy
-//}
-//
-//.error{
-//    @extend %box;
-//    background-color: map-get($colors, color2);
-//    //korzystanie z mapy
-//}
-//
-//.info{
-//    @extend %box;
-//    background-color: map-get($colors, color3);
-//    //korzystanie z mapy
-//}

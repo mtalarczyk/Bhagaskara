@@ -39,6 +39,8 @@
         background-image: url("../images/header/btn.png");
 //        background-size: 15.2rem 16.1rem;
         background-size: 100% 100%;
+        text-decoration: none;
+        color: map-get($colors, bg);
         cursor: pointer;
         
         div{
@@ -81,7 +83,14 @@
             font-weight: bold;
         }
         
+        &:link, &:visited{
+            text-decoration: none;
+            color: map-get($colors, bg);
+        }
+        
         &:hover, &:active{
+            text-decoration: none;
+            color: map-get($colors, bg);
             background-image: url("../images/header/btn-hover.png");
             background-size: 100% 100%;
         }
@@ -92,6 +101,7 @@
             height: 8.6rem;
             background-image: url("../images/header/btn-arrow.png");
             background-size: 100% 100%;
+            color: map-get($colors, bg);
             cursor: pointer;
             margin: 0 auto 5rem auto;
             
@@ -107,8 +117,15 @@
                 background-size: 100% 100%;
                 margin-top: 0.3rem;
             }
+        
+            &:link, &:visited{
+                text-decoration: none;
+                color: map-get($colors, bg);
+            }
             
             &:hover, &:active{
+                text-decoration: none;
+                color: map-get($colors, bg);
                 background-image: url("../images/header/btn-arrow-hover.png");
                 background-size: 100% 100%;
                 
