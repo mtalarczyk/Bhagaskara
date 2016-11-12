@@ -61,17 +61,16 @@ $(function(){
     var list = $('.gallery').find('[class^="img-"]');
     var body = $('body');
         
-    var div = $("<div>").addClass('fullScreen').html('<img title="Click to close!" />');
+    var div = $("<div>").addClass('fullScreen').html('<img title="Click to close!" />').appendTo(body);
     var imgZoom = div.find('img');
     
     list.on('click', function(){
-    
-        imgZoom.attr('src', "../images/portfolio/0"+$(this).attr('data-id')+".png");
-        div.appendTo(body);
+        imgZoom.attr('src', "./images/portfolio/0"+$(this).attr('data-id')+".png");
+        div.fadeIn(500);
     });
     
     imgZoom.on('click', function(){
-        div.detach();
+        div.fadeOut(500);
     });
 
 //Portolio - filter
